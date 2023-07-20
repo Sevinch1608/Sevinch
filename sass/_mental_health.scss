@@ -1,0 +1,141 @@
+.mental-health {
+  background-color: $nav-button-color;
+  padding: 24px 0;
+
+  .mental-health-about {
+    img {
+      width: 100%;
+      border-radius: 12px;
+      display: flex;
+      margin: 0 auto;
+    }
+    .tablet1,
+    .desktop {
+      display: none;
+    }
+    .about {
+      .mental-health-content {
+        h2 {
+          color: $button-text-color;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 32px;
+          letter-spacing: -0.1px;
+          margin: 14px 0;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          color: $button-text-color;
+          margin-bottom: 14px;
+        }
+      }
+    }
+    .content-about {
+      .desktop {
+        display: none;
+      }
+      ul {
+        width: 292px;
+        margin: 0 auto;
+        li {
+          color: $button-text-color;
+          text-align: left;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.1px;
+          list-style: inside;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 744px) {
+  .mental-health {
+    .mental-health-about {
+      .desktop,
+      .lg-tablet2 {
+        display: none;
+      }
+      .tablet1 {
+        display: block;
+      }
+      .about {
+        .mental-health-content {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .mental-health {
+    .mental-health-about {
+      .desktop,
+      .tablet1 {
+        display: none;
+      }
+      .lg-tablet2 {
+        display: block;
+      }
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        justify-content: start;
+        gap: 129px;
+        padding: 64px 0;
+
+        .mental-health-content {
+            margin: 0;
+          h2{
+            text-align: left;
+            margin: 0;
+          }
+          p{
+            text-align: left;
+            margin: 0;
+          }
+        }
+      }
+      .content-about{
+        ul{
+            margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+    .mental-health{
+        padding: 96px 0;
+        .mental-health-about{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 133px;
+            .lg-tablet2,
+            .tablet1{
+                display: none;
+            }
+            .desktop{
+                display: block;
+            }
+            .about{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                padding: 0;
+                gap: 16px;
+            }
+        }
+    }
+}
